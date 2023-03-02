@@ -48,8 +48,21 @@ const Header = () => {
 
       {/* bottom nav */}
 
-      <div>
-        gg
+      <div className=' flex items-center bg-amazon_blue-light p-2 space-x-5 text-white text-sm'>
+        <p className=' link flex items-center'>
+          <MenuIcon className=' h-6 mx-2'/>
+          All
+        </p>
+        <p className=' link'> Prime Video </p>
+        <p className=' link'> Become a Partner </p>
+        <p className=' link'> Today's Deals </p>
+        <p className=' link hidden lg:inline-flex'> Shop Kids </p>
+        <p className=' link hidden lg:inline-flex'> Buy Again </p>
+        <p className=' link hidden lg:inline-flex'> Shopper Toolkit </p>
+        <p className=' link hidden lg:inline-flex'> Healtth & Personal Care </p>
+        <p className=' link hidden lg:inline-flex'> Customer Service </p>
+
+
       </div>
     </header>
   )
