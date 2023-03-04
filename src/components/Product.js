@@ -6,9 +6,9 @@ import  Currency  from 'react-currency-formatter'
 const Product = ({id, title, price, description, category, image}) => {
 
 
-    const [rating] = useState(
-        Math.floor(Math.random() * (5 - 1 + 1)) + 1
-    )
+    const [rating] = useState(3)
+        // Math.floor(Math.random() * (5 - 1 + 1)) + 1
+    
   return (
     <div className=' relative flex flex-col m-5 bg-white z-30 p-10 '>
 
