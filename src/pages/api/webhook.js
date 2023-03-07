@@ -29,7 +29,7 @@ const fulfillOrder = async (session) => {
         .doc(session.id)
         .set({
             amount: session.amount_total / 100,
-            // images: session.images,
+            images: JSON.parse(session.metadata.images),
             timestamp: admin.firestore.FieldValue.serverTimestamp()
         })
         .then(()=> {
