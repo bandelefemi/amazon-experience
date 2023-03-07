@@ -26,10 +26,12 @@ export default async (req, res) => {
             allowed_countries: ['GB', 'US', 'CA']
         },
         line_items: transformedItems,
-        success_url: `http://localhost:3000`,
+        success_url: `http://localhost:3000/success`,
         cancel_url: `http://localhost:3000/checkout`,
         metadata: {
             email,
+            // images: JSON.stringify( items.map((item)=> item.image))
+
         }
 
     })
